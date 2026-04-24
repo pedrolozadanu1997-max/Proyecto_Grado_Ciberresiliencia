@@ -1,0 +1,22 @@
+# Infraestructura Segura para Mipymes - Fase 4 (TRL 5)
+**Autor:** Elio Ramiro Diaz  
+**Metodología:** AEGIS-MD + S-SDLC  
+**Proyecto:** Fortalecimiento de la ciberresiliencia en Mipymes bogotanas.
+
+## Descripción
+Este repositorio contiene el artefacto técnico de la **Fase de Construcción**. Es un script de automatización en Bash diseñado para realizar el *Hardening* (endurecimiento) de servidores Ubuntu/Debian en entornos VirtualBox.
+
+## Características Técnicas (Mitigación STRIDE)
+Basado en los lineamientos de **Miguel & Luis Eduardo (2020)**, el script ejecuta:
+- **Defensa Perimetral:** Configuración de Firewall UFW con políticas restrictivas.
+- **Protección Activa:** Implementación de `fail2ban` para mitigar ataques de fuerza bruta.
+- **Gestión de Identidad:** Aseguramiento del servicio SSH y bloqueo del usuario root.
+- **Integridad:** Actualización de parches críticos de seguridad.
+
+## Instrucciones de uso
+1. Clonar el repositorio.
+2. Dar permisos: `chmod +x hardening_elio.sh`
+3. Ejecutar con privilegios: `sudo ./hardening_elio.sh`
+
+## Métricas de Calidad
+Este prototipo ha sido validado bajo las métricas de **Eficiencia** y **Fiabilidad** de la norma ISO/IEC 25010, asegurando un consumo mínimo de recursos en la infraestructura de la Mipyme.
